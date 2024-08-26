@@ -1,0 +1,38 @@
+body {
+  background-color: #8cc461;
+}
+.scoreDiv {
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  display: flex;
+  font-weight: 900;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+#options {
+  color: #fff;
+}
+
+.score_display {
+  display: flex;
+  justify-content: space-evenly;
+}
+.score_display > div {
+  background-color: #fff;
+  border-radius: 5px;
+  color: black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 120px;
+}
+
+.score {
+  font-size: 44px;
+  margin: 2px;
+}
