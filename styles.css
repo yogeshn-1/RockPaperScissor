@@ -1,5 +1,8 @@
 body {
   background-color: #8cc461;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .scoreDiv {
   align-items: center;
@@ -8,7 +11,7 @@ body {
   display: flex;
   font-weight: 900;
   justify-content: space-between;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   padding: 0.5rem;
   text-transform: uppercase;
   width: 60%;
@@ -35,4 +38,196 @@ body {
 .score {
   font-size: 44px;
   margin: 2px;
+}
+
+.gamebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.triangleConatiner {
+  position: fixed;
+  display: flex;
+  justify-content: baseline;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 5vh;
+  display: block;
+}
+
+.outerTriangle {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 346.4px solid rgba(0, 0, 0, 0.64);
+  position: relative;
+}
+
+.innerTriangle {
+  bottom: 13%;
+  right: calc(10%);
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 277.12px solid #8cc461;
+  position: absolute;
+}
+
+button.number {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+}
+
+.top {
+  background: url(image/fist.svg) no-repeat center;
+  border: 18px solid #ffa943;
+  bottom: -30px;
+  left: 30%;
+}
+
+.bottom-left {
+  background: url(image/hand.svg) no-repeat center;
+  align-self: flex-end;
+  border: 18px solid #0074b6;
+  top: -50px;
+  left: -30px;
+}
+
+.bottom-right {
+  background: url(image/peace.svg) no-repeat center;
+  background-size: 50px;
+  align-self: flex-end;
+  border: 18px solid #bd00ff;
+  top: -50px;
+  right: -30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #3e8e4172;
+}
+
+button:active {
+  background-color: #3e8e4173;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+button.number {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+}
+
+.result-box {
+  display: none;
+  width: 100%;
+}
+
+.result-gen {
+  width: 100%;
+}
+
+.result-gen-choice {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.result-choice {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 350px;
+  height: auto;
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+}
+
+.rulebook {
+  display: grid;
+  place-items: center;
+  height: auto;
+  width: 300px;
+  background-color: #004429;
+  color: #fff;
+  border: 4px solid white;
+  border-radius: 10%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.rulebook.hidden {
+  display: none;
+}
+
+.rulebook #cross {
+  font-family: "Dangrek", sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  color: #fff;
+  border: 4px solid white;
+  background-color: red;
+  padding: 4px 12px;
+  border-radius: 50%;
+  position: absolute;
+  right: -15px;
+  top: -25px;
+}
+
+.rulebook ul {
+  margin-top: 0;
+  padding-right: 1vw;
+}
+
+.rulebook ul li::marker {
+  color: yellow;
+  font-size: x-large;
+}
+
+.rulebook ul li {
+  text-align: justify;
+  font-size: medium;
+  list-style-type: square;
+  margin-bottom: 10px;
+}
+.addBox.hidden {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
 }
